@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("./assets/fonts/fontello.css");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.vertical-line--container {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-line {
+  border-left: 2px solid #ffd105;
+  height: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #203B6A;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+h3 {
+  color: #203B6A ;
+  filter: opacity(80%);
+  text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+}
+
+.header-container--section1 span {
+  position: relative;
+  white-space: nowrap;
+}
+
+.header-container--section1 span::after {
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  right: 1px;
+  width: 145px;
+  height: 5px;
+  background-image: url("/assets/brush.png");
+  background-size: cover;
+}
+
+.perks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.perks img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.perks h5 {
+  color: #203B6A;
+  margin-bottom: 5px;
+  text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+}
+
+.perks p {
+  font-size: smaller;
+  font-weight: bolder;
+  filter: opacity(70%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.header-container--section2 span {
+  position: relative;
+  white-space: nowrap;
+}
+
+.header-container--section2 span::after {
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  right: -1px;
+  width: 115px;
+  height: 5px;
+  background-image: url("/assets/brush.png");
+  background-size: cover;
+}
+
+
+.testimony-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.testimony-card .arrow {
+  position: absolute;
+  top: 65%;
+  color: rgba(128, 128, 128, 0.489);
+}
+
+.user-avatar {
+  position: relative;
+}
+
+.user-avatar i {
+  position: absolute;
+  color: #ffd105;
+  font-size: 30px;
+  top: -20px;
+  left: -50px;
+}
+
+.icon-left {
+  left: 1px;
+}
+
+.icon-right {
+  right: 1px;
+}
+
+.testimony-card-text {
+  text-align: left;
+  min-height: 140px;
+  justify-content: space-between;
+  margin: -5px 10px 0;
+  
+}
+
+.testimony-card p {
+  color: #203B6A;
+  font-size: smaller;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+h5 {
+  color: #203B6A;
+  text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+}
+
+
+@media only screen and (min-width: 480px) {
+  .container {
+    max-width: 1000px;
+    padding-top: 0;
+  }
+
+  .perks {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .perks img {
+    width: 80px;
+    margin-bottom: 25px;
+  }
+
+  .card {
+    padding: 0 20px;
+  }
+
+  .vertical-line {
+    height: 80px;
+    margin: 20px 0;
+  }
+
+  .perks h5 {
+    margin-bottom: 15px;
+  }
+
+  .testimonials {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .testimony-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 15px;
+    max-width: 720px;
+    align-items: flex-end;
+  }
+
+  .testimony-card .arrow {
+    font-size: 24px;
+    top: 45%;
+  }
+
+  .icon-left {
+    left: 0px;
+  }
+  
+  .icon-right {
+    right: 15px;
+  }
+
+  .user-avatar i {
+    top: -50px;
+    font-size: 38px;
+    left: -60px;
+  }
+
+  .user-avatar img {
+    width: 145px;
+  }
+
+  .testimony-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+}
